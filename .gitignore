@@ -17,3 +17,5 @@ supabase/.temp
 supabase/.branches
 # editor / agent local config
 .claude
+.env*
+!.env.example
