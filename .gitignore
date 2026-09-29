@@ -1,0 +1,19 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+.DS_Store
+.qa
+
+# local env and deploy state
+.env
+.env.local
+.env.*.local
+.vercel
+# Supabase CLI local state
+supabase/.temp
+supabase/.branches
+# editor / agent local config
+.claude

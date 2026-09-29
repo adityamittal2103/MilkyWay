@@ -1,0 +1,89 @@
+/* ───────────────────────── MILKY WAY design tokens
+   A controlled cosmic palette. Deep black space carries the contrast; colour is light, not paint.
+     base      void · abyss · ink                  (≈ 80% of every screen)
+     primary   electric violet · ultraviolet · deep blue · cyan
+     secondary magenta · hot pink · indigo
+     special   solar orange (the ship, the Board action) · warm white · acid lime · red
+               rare and powerful: never decoration */
+:root {
+  --void: #02030a;
+  --abyss: #050817;
+  --ink: #0b1024;
+
+  --violet: #7a5cff;
+  --uv: #a14dff;
+  --deep: #2446ff;
+  --cyan: #3fe0ff;
+  --magenta: #ff3ec8;
+  --pink: #ff4f9a;
+  --indigo: #4b3bff;
+  --warm: #fff4e0;
+  --acid: #c6ff3d;
+  --red: #ff3b47;
+  --starlight: #f1ede4;
+  --dust: #8b90a6;
+  --ion: #5b8cff;
+  --pulsar: #ff3e9a;
+  --flare: #ff7a1a;
+  --lumen: #cfe0ff;
+  --ember: #ffb38a;
+
+  --rule: rgb(241 237 228 / 0.14);
+  --rule-strong: rgb(241 237 228 / 0.32);
+  --veil: rgb(3 4 9 / 0.72);
+
+  /* type */
+  --f-display: var(--font-anybody), 'Arial Narrow', system-ui, sans-serif;
+  --f-text: var(--font-instrument), system-ui, sans-serif;
+  --f-mono: var(--font-plex-mono), ui-monospace, 'SFMono-Regular', monospace;
+  --f-serif: var(--font-instrument-serif), Georgia, serif;
+
+  --fs-mega: clamp(4.6rem, 16.5vw, 19rem);
+  --fs-hero: clamp(3rem, 8.6vw, 8.8rem);
+  --fs-h2: clamp(2.3rem, 5.2vw, 5rem);
+  --fs-h3: clamp(1.35rem, 2.1vw, 1.9rem);
+  --fs-lead: clamp(1.1rem, 1.45vw, 1.4rem);
+  --fs-body: clamp(0.98rem, 1.05vw, 1.08rem);
+  --fs-small: 0.875rem;
+  --fs-mono: 0.72rem;
+  --track-mono: 0.12em;
+
+  /* space (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 144px;
+  --gutter: clamp(16px, 4vw, 56px);
+  --bar-h: 64px;
+
+  /* motion: deliberately different families */
+  --ease-ui: cubic-bezier(0.16, 1, 0.3, 1); /* expo.out */
+  --ease-type: cubic-bezier(0.22, 1, 0.36, 1); /* power4.out */
+  --ease-in: cubic-bezier(0.55, 0, 0.9, 0.35); /* power3.in */
+  --t-ui: 220ms;
+  --t-type: 900ms;
+  /* five speeds, five jobs (never animate everything at one tempo)
+       micro 150–300 · interaction 300–600 · transition 700–1400 · cinematic 1.5–5 s · epic 5 s+ */
+  --t-micro: 200ms;
+  --t-interact: 450ms;
+  --t-transition: 1000ms;
+  --t-cinematic: 2400ms;
+  --t-epic: 6000ms;
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1); /* cruise: symmetric */
+  --ease-anticipate: cubic-bezier(0.34, -0.28, 0.24, 1); /* a breath back, then go */
+  --ease-land: cubic-bezier(0.12, 0.9, 0.24, 1.06); /* decelerate, settle a hair past */
+
+  color-scheme: dark;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --bar-h: 56px;
+  }
+}
